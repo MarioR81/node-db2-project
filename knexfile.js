@@ -53,3 +53,6 @@ module.exports = {
 //property as the knexConfig
 
 // create a migration with knex migrate:make {name}
+
+
+// run the migration with knex migrate:latest

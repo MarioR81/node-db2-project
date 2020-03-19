@@ -5,13 +5,13 @@ exports.up = function(knex) {
       // a primary key, named id, type integer, autoincrement
       tbl.increments();
 
-      tbl.string('vin', 255).unique().index();
+      tbl.string('vin', 255).notNullable().unique().index();
 
-      tbl.string('make', 128);
+      tbl.string('make', 128).notNullable();
 
-      tbl.string('model', 128);
+      tbl.string('model', 128).notNullable();
 
-      tbl.integer('milage');
+      tbl.integer('milage').notNullable();
 
       tbl.string('transmition', 128);
 
